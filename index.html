@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiva Technologies | Transforming Businesses Through Intelligent Technology</title>
+    <meta name="description" content="Future-ready IT solutions designed to empower businesses with innovation, security, scalability, and digital excellence. Discover cloud solutions, cyber security, AI automation, and custom software development.">
+    <!-- Google Fonts: Space Grotesk (futuristic headers) & Inter (premium readable body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for clean tech iconography -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- INTERACTIVE BACKGROUND CANVAS FOR PARTICLES -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- CINEMATIC BACKGROUND GLOWS (LIGHTING EFFECTS) -->
+    <div class="ambient-glow bg-glow-1"></div>
+    <div class="ambient-glow bg-glow-2"></div>
+    <div class="ambient-glow bg-glow-3"></div>
+
+    <!-- PAGE 1: CINEMATIC INTRO EXPERIENCE -->
+    <section id="page-1" class="fullscreen-intro">
+        <!-- Fullscreen Background Video (Playing in raw high-fidelity resolution) -->
+        <video id="intro-video" autoplay muted loop playsinline preload="auto">
+            <source src="Circuit_lines_flowing_toward_hor…_202605210839.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- CINEMATIC TRANSITION OVERLAYS -->
+    <div id="wipe-overlay" class="wipe-transition">
+        <div class="wipe-bar wipe-bar-1"></div>
+        <div class="wipe-bar wipe-bar-2"></div>
+        <div class="wipe-bar wipe-bar-3"></div>
+        <div class="transition-logo-container">
+            <svg class="jiva-logo-large" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 15 L80 32 L80 68 L50 85 L20 68 L20 32 Z" stroke="url(#logo-grad)" stroke-width="4" fill="none" />
+                <circle cx="50" cy="50" r="10" fill="#00D9FF" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- PAGE 2: MAIN COMPANY WEBSITE -->
+    <div id="page-2" class="main-website-container hidden">
+
+        <!-- HEADER / NAVIGATION -->
+        <header id="site-header">
+            <div class="header-container">
+                <a href="#hero" class="brand-logo">
+                    <svg class="jiva-logo-small" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 15 L80 32 L80 68 L50 85 L20 68 L20 32 Z" stroke="url(#logo-grad)" stroke-width="5" fill="none" />
+                        <path d="M50 30 L65 38 L65 62 L50 70 L35 62" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" />
+                    </svg>
+                    <span class="logo-name">JIVA</span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="desktop-nav">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#why-choose-us" class="nav-link">Why Us</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#contact" class="btn-nav">Get Started</a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-nav-overlay">
+            <button id="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="mobile-nav-links">
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#why-choose-us" class="mobile-nav-link">Why Us</a>
+                <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+                <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#contact" class="btn-primary mobile-menu-cta">Get Started</a>
+            </div>
+        </div>
+
+        <!-- CINEMATIC AUTOMATED IMAGE SLIDER -->
+        <section id="cinematic-slider" class="cinematic-slider-section">
+            <div class="slider-wrapper">
+                <div class="slide-item active"><img src="WhatsApp Image 2026-05-20 at 9.33.12 PM.jpeg" alt="Cybersecurity"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 09_53_10 AM.png" alt="IT Infrastructure"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 10_00_49 AM.png" alt="Data Center"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 10_03_10 AM.png" alt="Infrastructure Management (DCIM)"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 10_07_57 AM.png" alt="Support"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 10_09_52 AM.png" alt="Optical Fiber Solutions"></div>
+                <div class="slide-item"><img src="ChatGPT Image May 21, 2026, 10_12_52 AM.png" alt="AV systems, IoT & Automations"></div>
+            </div>
+            
+            <!-- Glassmorphic HUD overlay on the left side -->
+            <div class="slider-hud-overlay">
+                <div class="hud-panel-header">
+                    <span class="hud-title-accent">SYSTEM ARCHITECTURE // ON-LINE</span>
+                    <h3>CORE SOLUTIONS</h3>
+                </div>
+                <ul class="hud-services-list">
+                    <li class="hud-service-item active" data-slide="0">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">Cybersecurity</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="1">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">IT Infrastructure</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="2">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">Data Center</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="3">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">Infrastructure Management (DCIM)</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="4">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">Support</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="5">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">Optical Fiber Solutions</span>
+                    </li>
+                    <li class="hud-service-item" data-slide="6">
+                        <span class="hud-indicator"></span>
+                        <span class="hud-service-name">AV systems, IoT & Automations</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Glassmorphic Overlay Frame for that luxury tech feel -->
+            <div class="slider-overlay-frame">
+                <div class="slider-info-badge">
+                    <span class="pulse-dot"></span>
+                    <span id="slider-count-label">JIVA ARCHITECTURES &bull; 1 / 7</span>
+                </div>
+            </div>
+
+            <!-- Slide navigation dots -->
+            <div class="slider-dots-indicator">
+                <span class="slide-dot active" data-slide="0"></span>
+                <span class="slide-dot" data-slide="1"></span>
+                <span class="slide-dot" data-slide="2"></span>
+                <span class="slide-dot" data-slide="3"></span>
+                <span class="slide-dot" data-slide="4"></span>
+                <span class="slide-dot" data-slide="5"></span>
+                <span class="slide-dot" data-slide="6"></span>
+            </div>
+        </section>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-map-backdrop"></div>
+            <div class="container hero-container-grid">
+                <div class="hero-text-content animate-fade-in-left">
+                    <div class="tech-badge">
+                        <span class="pulse-dot"></span>
+                        <span>NEXT GENERATION INTELLIGENCE</span>
+                    </div>
+                    <h1 class="hero-title">Innovative IT Solutions for the <span class="text-gradient">Digital Future</span></h1>
+                    <p class="hero-desc">Empowering businesses with secure infrastructure, scalable systems, intelligent software, and next-generation technology solutions.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn-primary">
+                            <span>Get Started</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn-secondary">
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual-content animate-fade-in-right">
+                    <div class="interactive-globe-container">
+                        <!-- Holographic Globe Visualization -->
+                        <div class="holo-ring holo-ring-1"></div>
+                        <div class="holo-ring holo-ring-2"></div>
+                        <div class="holo-ring holo-ring-3"></div>
+                        <div class="globe-mesh">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" stroke="rgba(0, 217, 255, 0.15)" stroke-width="1" fill="none" stroke-dasharray="4 4" />
+                                <ellipse cx="100" cy="100" rx="80" ry="30" stroke="rgba(0, 123, 255, 0.2)" stroke-width="1.5" fill="none" />
+                                <ellipse cx="100" cy="100" rx="30" ry="80" stroke="rgba(0, 123, 255, 0.2)" stroke-width="1.5" fill="none" />
+                                <path d="M20 100 H180" stroke="rgba(0, 217, 255, 0.2)" stroke-width="1.5" />
+                                <path d="M100 20 V180" stroke="rgba(0, 217, 255, 0.2)" stroke-width="1.5" />
+                                <circle cx="100" cy="100" r="50" stroke="rgba(255, 122, 0, 0.2)" stroke-width="1" fill="none" />
+                                <circle cx="100" cy="50" r="3" fill="#00D9FF" class="orbit-node node-1" />
+                                <circle cx="150" cy="100" r="3.5" fill="#FF7A00" class="orbit-node node-2" />
+                                <circle cx="50" cy="100" r="3" fill="#007BFF" class="orbit-node node-3" />
+                                <circle cx="100" cy="150" r="4" fill="#FFFFFF" class="orbit-node node-4" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <span>SCROLL DOWN</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h2 class="section-title">About Jiva Technologies</h2>
+                    <p class="section-subtitle">A premier IT partner committed to engineering future-ready environments and delivering intelligent technological platforms.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-main-text glass-card">
+                        <h3>Pioneering Digital Transformation</h3>
+                        <p>At Jiva Technologies, we operate at the intersection of business strategy and high-end engineering. We believe that technology should not just support a business—it should accelerate it. Our team of veteran software architects, cloud engineers, and security specialists collaborate to construct secure, scalable, and resilient systems tailored to enterprise demands.</p>
+                        <p>Whether optimizing cloud infrastructures, installing robust cybersecurity defenses, or developing bespoke AI-driven software architectures, our customer-first methodology ensures absolute transparency, execution excellence, and future-proof digital scale.</p>
+                    </div>
+
+                    <div class="about-pillars">
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
+                            <h4>Absolute Security</h4>
+                            <p>We bake security directly into our foundation, ensuring your business parameters are resilient against any global vulnerability threats.</p>
+                        </div>
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon"><i data-lucide="zap"></i></div>
+                            <h4>Elite Scalability</h4>
+                            <p>Architecting multi-cloud and database frameworks that adapt and scale smoothly alongside your customer traffic.</p>
+                        </div>
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon"><i data-lucide="cpu"></i></div>
+                            <h4>Intelligent Innovation</h4>
+                            <p>Deploying machine learning models, custom automations, and modern stacks that keep you ahead of the digital curve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CORE COMPETENCIES</span>
+                    <h2 class="section-title">Next-Gen Solutions</h2>
+                    <p class="section-subtitle">Explore our elite suite of services engineered to solve complex operational challenges and scale digital businesses.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1: Cloud Solutions -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Multi-cloud migration, serverless architecture deployment, AWS/Azure/GCP management, and cost-efficient scaling.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 2: Cyber Security -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="shield-alert"></i>
+                        </div>
+                        <h3>Cyber Security</h3>
+                        <p>Zero-trust architectures, proactive threat hunting, vulnerability assessments, compliance compliance, and end-point encryption.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 3: Software Development -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Bespoke enterprise applications, custom API integrations, robust database design, and agile software development cycles.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 4: Web Development -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>High-performance web platforms, secure e-commerce systems, stunning visual portfolios, and optimized digital portals.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 5: Mobile App Development -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Native iOS and Android systems, cross-platform applications (Flutter/React Native), and intuitive digital mobile designs.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 6: IT Infrastructure -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="network"></i>
+                        </div>
+                        <h3>IT Infrastructure</h3>
+                        <p>Virtualization management, software-defined networking, container orchestration (Kubernetes), and reliable data center design.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 7: AI & Automation Solutions -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <h3>AI & Automation Solutions</h3>
+                        <p>Intelligent robotic process automation (RPA), machine learning integrations, predictive analytics, and conversational agents.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+
+                    <!-- Service 8: IT Support & Maintenance -->
+                    <div class="service-card glass-card">
+                        <div class="service-card-glow"></div>
+                        <div class="service-icon">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3>IT Support & Maintenance</h3>
+                        <p>Continuous 24/7/365 active monitoring, disaster recovery management, rapid-response SLAs, and technical desktop resolutions.</p>
+                        <a href="#contact" class="service-link"><span>Learn More</span> <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section id="why-choose-us" class="why-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">OUR ADVANTAGE</span>
+                    <h2 class="section-title">Why Industry Leaders Choose Jiva</h2>
+                    <p class="section-subtitle">We design with operational precision, securing reliability and enabling unmatched technological performance.</p>
+                </div>
+
+                <!-- Live Animated Stats counters -->
+                <div class="stats-row">
+                    <div class="stat-box glass-card">
+                        <div class="stat-number text-gradient" data-target="250">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <div class="stat-number text-gradient" data-target="99.9" data-decimals="1">0</div>
+                        <div class="stat-label">System Uptime Guarantee</div>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <div class="stat-number text-gradient" data-target="24">0</div>
+                        <div class="stat-label">Support Monitoring (Hours)</div>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <div class="stat-number text-gradient" data-target="15" data-suffix="+">0</div>
+                        <div class="stat-label">Enterprise Clients</div>
+                    </div>
+                </div>
+
+                <!-- Grid Details -->
+                <div class="why-grid">
+                    <div class="why-card glass-card">
+                        <i data-lucide="users"></i>
+                        <h4>Experienced Team</h4>
+                        <p>Our architects and project managers carry decades of combined elite tech-firm expertise to deliver clean implementations.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <i data-lucide="phone-call"></i>
+                        <h4>Fast Technical Support</h4>
+                        <p>Dedicated customer success pipelines that act on queries immediately under strict service agreements.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <i data-lucide="database"></i>
+                        <h4>Secure Infrastructure</h4>
+                        <p>Integrating top-tier enterprise protections (SOC 2, ISO 27001 readiness) into every software product layer.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <i data-lucide="line-chart"></i>
+                        <h4>Scalable Solutions</h4>
+                        <p>We write systems meant to bend, expand, and balance traffic nodes rather than fracturing under user surges.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <i data-lucide="cpu"></i>
+                        <h4>Modern Technologies</h4>
+                        <p>Leveraging Rust, Go, React, Next, Kubernetes, and specialized server stacks for premium, fast performances.</p>
+                    </div>
+                    <div class="why-card glass-card">
+                        <i data-lucide="heart-handshake"></i>
+                        <h4>Client-Focused Service</h4>
+                        <p>We value clear alignments, detailed progress dashboards, and structured reviews over corporate delays.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CASE STUDIES</span>
+                    <h2 class="section-title">Our Engineered Success</h2>
+                    <p class="section-subtitle">Examine direct technological proofs built for global companies, showing scalability, code quality, and style.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Solutions</button>
+                    <button class="filter-btn" data-filter="websites">Websites</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="enterprise">Enterprise Solutions</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud Infrastructure</button>
+                </div>
+
+                <!-- Showcase Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-card glass-card" data-category="cloud">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-1">
+                                <i data-lucide="server"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Cloud Infrastructure</span>
+                            <h3>AeroSpace Data Lake Migration</h3>
+                            <p>Successfully migrated 4.2 petabytes of high-security data to AWS serverless clusters with zero runtime friction.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-card glass-card" data-category="enterprise">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-2">
+                                <i data-lucide="activity"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Enterprise Solutions</span>
+                            <h3>MediChain Hospital System</h3>
+                            <p>Integrated decentralized medical record transfers utilizing high-speed REST interfaces and AES encryption.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-card glass-card" data-category="websites">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-3">
+                                <i data-lucide="globe"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Websites</span>
+                            <h3>FinTech Premium Portal</h3>
+                            <p>Designed and hosted a custom trading interface featuring real-time socket listings and glassmorphism styling.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-card glass-card" data-category="mobile">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-4">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Mobile Apps</span>
+                            <h3>Nova E-Mobility Application</h3>
+                            <p>Developed a dual Flutter application matching EV drivers to local charging hubs with live GPS trackers.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="portfolio-card glass-card" data-category="enterprise">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-5">
+                                <i data-lucide="database"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Enterprise Solutions</span>
+                            <h3>Apex Stock Automations</h3>
+                            <p>Introduced multi-layered robotic automations to auto-allocate warehouse products, reducing delays by 34%.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="portfolio-card glass-card" data-category="cloud">
+                        <div class="portfolio-image-wrapper">
+                            <div class="portfolio-img-placeholder p-glow-6">
+                                <i data-lucide="cpu"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="project-tag">Cloud Infrastructure</span>
+                            <h3>Cypher Zero Trust Pipeline</h3>
+                            <p>Enforced active continuous-authorization workflows (Zero Trust) across a distributed remote team of 1,200.</p>
+                            <a href="#contact" class="portfolio-action-link">View Case Study <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <section id="testimonials" class="testimonials-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">Trusted by Tech Directors</h2>
+                    <p class="section-subtitle">Here is how Jiva Technologies transforms organizations, builds security, and ensures reliable growth.</p>
+                </div>
+
+                <!-- Testimonial Slider / Cards -->
+                <div class="testimonials-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card glass-card active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                            </div>
+                            <p>"Jiva Technologies completely modernized our legacy servers. Their Cloud Solutions migrating to serverless API pipelines scaled our operations tenfold, saving us 40% on monthly overheads. They are the ultimate IT partners for growing enterprises."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-1">MA</div>
+                            <div class="author-info">
+                                <h4>Marcus Vance</h4>
+                                <span>Chief Technology Officer, AeroSpace Corp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                            </div>
+                            <p>"Security was our single greatest concern. Jiva Technologies audit-proofed our systems, establishing a zero-trust model. Their cyber team works with unmatched precision, delivering excellent service and immediate support responses."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-2">SK</div>
+                            <div class="author-info">
+                                <h4>Sarah Kincaid</h4>
+                                <span>VP of Security, FinTech Holdings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                                <i data-lucide="star" fill="#FF7A00" stroke="#FF7A00"></i>
+                            </div>
+                            <p>"The custom mobile app and database configurations Jiva developed became the benchmark for our user experience. Their project managers are incredibly responsive, making technical milestones clean and stress-free."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar av-3">JL</div>
+                            <div class="author-info">
+                                <h4>James Lindqvist</h4>
+                                <span>Co-Founder, Nova Mobility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="control-btn prev-btn" aria-label="Previous Slide"><i data-lucide="arrow-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="control-btn next-btn" aria-label="Next Slide"><i data-lucide="arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Build the Future With Us</h2>
+                    <p class="section-subtitle">Discuss your product requirements, receive architecture recommendations, or partner with us on custom transformations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact info -->
+                    <div class="contact-info-panel glass-card">
+                        <h3>Contact Information</h3>
+                        <p class="contact-prompt">Let us know how we can assist. Get in touch directly or use our automated project query form.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="info-icon" data-lucide="mail"></i>
+                                <div>
+                                    <span class="info-label">Email Us</span>
+                                    <a href="mailto:solutions@jivatechnologies.com" class="info-value">solutions@jivatechnologies.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="info-icon" data-lucide="phone"></i>
+                                <div>
+                                    <span class="info-label">Call Support</span>
+                                    <a href="tel:+18005555482" class="info-value">+1 (800) 555-JIVA</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="info-icon" data-lucide="map-pin"></i>
+                                <div>
+                                    <span class="info-label">Global Headquarters</span>
+                                    <span class="info-value">720 Silicon Boulevard, Suite 104, San Francisco, CA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat & Socials -->
+                        <div class="contact-socials-group">
+                            <a href="https://wa.me/18005555482" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                                <i data-lucide="message-square"></i>
+                                <span>Chat via WhatsApp</span>
+                            </a>
+                            <div class="social-icons-wrapper">
+                                <a href="#" class="social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                                <a href="#" class="social-icon" aria-label="Twitter/X"><i data-lucide="twitter"></i></a>
+                                <a href="#" class="social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-panel glass-card">
+                        <h3>Initiate Project</h3>
+                        <form id="jiva-contact-form" class="futuristic-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                    <div class="input-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Corporate Email</label>
+                                    <input type="email" id="form-email" placeholder="john@company.com" required>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-service">Required Solution</label>
+                                <select id="form-service" required>
+                                    <option value="" disabled selected>Select service category...</option>
+                                    <option value="cloud">Cloud Migration & Management</option>
+                                    <option value="security">Zero Trust Cyber Security</option>
+                                    <option value="software">Custom Software Engineering</option>
+                                    <option value="web">Web Platform Development</option>
+                                    <option value="mobile">Mobile Application Systems</option>
+                                    <option value="ai">AI / RPA Automations</option>
+                                    <option value="infrastructure">Datacenter / Network Systems</option>
+                                    <option value="maintenance">IT Support & SLAs</option>
+                                </select>
+                                <div class="input-line"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Project Parameters & Timeline</label>
+                                <textarea id="form-message" rows="4" placeholder="Briefly describe your objectives, data challenges, and budget range..." required></textarea>
+                                <div class="input-line"></div>
+                            </div>
+
+                            <button type="submit" class="btn-primary form-submit-btn">
+                                <span>Submit Request</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                        <div id="form-success-msg" class="form-success-overlay hidden">
+                            <div class="success-content">
+                                <i data-lucide="check-circle" class="success-icon"></i>
+                                <h4>Request Submitted</h4>
+                                <p>Thank you. Our systems have logged your inquiry. A senior solution architect will review and reply within 4 hours.</p>
+                                <button id="success-close-btn" class="btn-secondary">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="site-footer">
+            <div class="footer-glow"></div>
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo">
+                        <svg class="jiva-logo-small" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 15 L80 32 L80 68 L50 85 L20 68 L20 32 Z" stroke="url(#logo-grad)" stroke-width="5" fill="none" />
+                            <path d="M50 30 L65 38 L65 62 L50 70 L35 62" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" />
+                        </svg>
+                        <span class="logo-name">JIVA</span>
+                    </a>
+                    <p class="footer-desc">Next-generation IT solutions engineered to secure, scale, and transform modern business operations globally.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Cyber Security</a></li>
+                        <li><a href="#services">Software Engineering</a></li>
+                        <li><a href="#services">AI & Automations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#why-choose-us">Why Jiva</a></li>
+                        <li><a href="#portfolio">Our Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Contact Details</h4>
+                    <ul class="footer-contact-info">
+                        <li><i data-lucide="mail"></i> <span>solutions@jivatechnologies.com</span></li>
+                        <li><i data-lucide="phone"></i> <span>+1 (800) 555-JIVA</span></li>
+                        <li><i data-lucide="map-pin"></i> <span>Silicon Boulevard, CA</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Jiva Technologies. All rights reserved. Future-ready solutions built with precision.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="index.js"></script>
+</body>
+</html>
